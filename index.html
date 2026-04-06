@@ -16,8 +16,8 @@
         }
 
         body {
-            background-color: #1a1a1a;
-            color: #d4cfc4;
+            background-color: #ffffff;
+            color: #000000;
             font-family: 'Courier Prime', 'Courier New', Courier, monospace;
             min-height: 100vh;
             display: flex;
@@ -32,33 +32,21 @@
             padding: 40px 0 60px;
         }
 
-        /* Top pharmaceutical header */
         .pharma-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             font-size: 12px;
             letter-spacing: 0.5px;
-            color: #a09d94;
+            color: #000000;
             padding-bottom: 16px;
-            border-bottom: 1px solid #3a3a3a;
+            border-bottom: 1px solid #000000;
         }
 
-        .pharma-header .left {
-            white-space: nowrap;
-        }
+        .pharma-header .left { white-space: nowrap; }
+        .pharma-header .right { text-align: right; white-space: nowrap; }
+        .pharma-header .rx { font-weight: 700; color: #000000; }
 
-        .pharma-header .right {
-            text-align: right;
-            white-space: nowrap;
-        }
-
-        .pharma-header .rx {
-            font-weight: 700;
-            color: #d4cfc4;
-        }
-
-        /* Title */
         .title {
             text-align: center;
             padding: 60px 0 20px;
@@ -69,7 +57,7 @@
             font-size: clamp(42px, 8vw, 80px);
             font-weight: 400;
             letter-spacing: 0.35em;
-            color: #e8e4da;
+            color: #000000;
             text-transform: uppercase;
         }
 
@@ -77,34 +65,30 @@
             text-align: center;
             font-size: 14px;
             letter-spacing: 1px;
-            color: #a09d94;
+            color: #000000;
             padding-bottom: 30px;
-            border-bottom: 1px solid #3a3a3a;
+            border-bottom: 1px solid #000000;
         }
 
-        /* Indication section */
-        .indication {
-            padding: 40px 0;
-        }
+        .indication { padding: 40px 0; }
 
         .indication .label {
             font-size: 11px;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: #a09d94;
+            color: #000000;
             margin-bottom: 16px;
         }
 
         .indication .synopsis {
             font-size: 16px;
             line-height: 1.7;
-            color: #d4cfc4;
+            color: #000000;
         }
 
-        /* Warning box */
         .warning-box {
-            border: 1px solid #3a3a3a;
+            border: 1px solid #000000;
             padding: 28px 32px;
             margin: 10px 0 40px;
         }
@@ -113,17 +97,17 @@
             font-weight: 700;
             font-size: 14px;
             margin-bottom: 14px;
-            color: #d4cfc4;
+            color: #000000;
         }
 
         .warning-box p {
             font-size: 14px;
             line-height: 1.8;
-            color: #a09d94;
+            color: #000000;
         }
 
         .redacted {
-            background-color: #4a4a4a;
+            background-color: #000000;
             color: transparent;
             padding: 1px 4px;
             user-select: none;
@@ -133,22 +117,21 @@
         .warning-box .dosage {
             margin-top: 16px;
             font-size: 14px;
-            color: #a09d94;
+            color: #000000;
         }
 
         .warning-box .dosage strong {
-            color: #d4cfc4;
+            color: #000000;
             font-weight: 700;
         }
 
-        /* Read screenplay button */
         .read-btn {
             display: block;
             width: 100%;
             padding: 20px;
             background: transparent;
-            border: 1px solid #3a3a3a;
-            color: #a09d94;
+            border: 1px solid #000000;
+            color: #000000;
             font-family: 'Courier Prime', 'Courier New', Courier, monospace;
             font-size: 13px;
             letter-spacing: 3px;
@@ -160,158 +143,52 @@
         }
 
         .read-btn:hover {
-            border-color: #6a6a6a;
-            color: #e8e4da;
+            background-color: #000000;
+            color: #ffffff;
         }
 
-        .read-btn.active {
-            border-color: #6a6a6a;
-            color: #e8e4da;
-            border-bottom: none;
-        }
-
-        /* Screenplay embed container */
-        .screenplay-viewer {
-            display: none;
-            width: 100%;
-            border: 1px solid #6a6a6a;
-            border-top: none;
-            margin-bottom: 40px;
-            background: #2a2a2a;
-        }
-
-        .screenplay-viewer.visible {
-            display: block;
-        }
-
-        .screenplay-viewer iframe {
-            width: 100%;
-            height: 80vh;
-            border: none;
-            display: block;
-        }
-
-        .viewer-controls {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 16px;
-            border-top: 1px solid #3a3a3a;
-            font-size: 11px;
-            color: #6a6a6a;
-            letter-spacing: 1px;
-        }
-
-        .viewer-controls a {
-            color: #a09d94;
-            text-decoration: none;
-            font-size: 11px;
-            letter-spacing: 1px;
-            transition: color 0.3s ease;
-        }
-
-        .viewer-controls a:hover {
-            color: #e8e4da;
-        }
-
-        /* Footer */
         .footer {
             text-align: center;
             padding: 40px 0 20px;
             font-size: 11px;
             letter-spacing: 0.5px;
-            color: #555;
+            color: #000000;
         }
 
-        /* Responsive */
         @media (max-width: 600px) {
-            .pharma-header {
-                flex-direction: column;
-                gap: 4px;
-            }
-
-            .pharma-header .right {
-                text-align: left;
-            }
-
-            .warning-box {
-                padding: 20px;
-            }
-
-            .screenplay-viewer iframe {
-                height: 60vh;
-            }
+            .pharma-header { flex-direction: column; gap: 4px; }
+            .pharma-header .right { text-align: left; }
+            .warning-box { padding: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Pharmaceutical header -->
         <div class="pharma-header">
             <span class="left">Westin Pharmaceuticals, Inc.</span>
             <span class="right"><span class="rx">Rx Only</span> &middot; LEVERAZOPAM 500mg &middot; NDC 1428-1984-10</span>
         </div>
 
-        <!-- Title -->
         <div class="title">
             <h1>Precautions</h1>
         </div>
 
-        <!-- Byline -->
         <div class="byline">Written by Domingo Claudio</div>
 
-        <!-- Indication for Use -->
         <div class="indication">
             <div class="label">Indication for Use</div>
             <div class="synopsis">A teenager on lifelong medication demands the answers his mother has been keeping from him.</div>
         </div>
 
-        <!-- Warning box -->
         <div class="warning-box">
             <div class="warning-title">WARNING:</div>
             <p>Do not discontinue use without consulting <span class="redacted">XXXXXXXXXXXXXX</span>. Abrupt cessation may result in <span class="redacted">XXXXXXXXXXXXXXXXXXXXXXXXX</span>.</p>
             <p class="dosage">Take 1 tablet before <strong>sleep</strong>. Do not suppress.</p>
         </div>
 
-        <!-- Read the screenplay button -->
-        <button class="read-btn" id="readBtn" onclick="toggleScreenplay()">Read the Screenplay</button>
+        <a href="/read-the-script" class="read-btn">Read the Screenplay</a>
 
-        <!-- Embedded screenplay viewer -->
-        <div class="screenplay-viewer" id="screenplayViewer">
-            <iframe id="screenplayFrame" title="Precautions Screenplay" allowfullscreen></iframe>
-            <div class="viewer-controls">
-                <span>Precautions &mdash; Screenplay</span>
-                <a href="https://drive.google.com/file/d/1AEKb3LdvmQD0CrhcA-gAUXQrwlS-IWot/view?usp=sharing" target="_blank" rel="noopener">Open in Google Drive &rarr;</a>
-            </div>
-        </div>
-
-        <!-- Footer -->
         <div class="footer">&copy; Domingo Claudio. All rights reserved.</div>
     </div>
-
-    <script>
-        let loaded = false;
-
-        function toggleScreenplay() {
-            const viewer = document.getElementById('screenplayViewer');
-            const btn = document.getElementById('readBtn');
-            const frame = document.getElementById('screenplayFrame');
-
-            if (viewer.classList.contains('visible')) {
-                viewer.classList.remove('visible');
-                btn.classList.remove('active');
-                btn.textContent = 'Read the Screenplay';
-            } else {
-                if (!loaded) {
-                    frame.src = 'https://drive.google.com/file/d/1AEKb3LdvmQD0CrhcA-gAUXQrwlS-IWot/preview';
-                    loaded = true;
-                }
-                viewer.classList.add('visible');
-                btn.classList.add('active');
-                btn.textContent = 'Close';
-                viewer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-        }
-    </script>
 </body>
 </html>
