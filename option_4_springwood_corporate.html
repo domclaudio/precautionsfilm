@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Springwood Pharmaceuticals | Restful Nights. Healthy Families.</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 29V12' stroke='%232f5d8a' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M16 18c-5 0-8-3-8-8 5 0 8 3 8 8zM16 14c5 0 8-3 8-8-5 0-8 3-8 8z' fill='%232f5d8a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d2f45;--soft:#5b6b7d;--line:#dfe6ee;--blue:#2f5d8a;--wash:#eef3f8;--paper:#ffffff;--gray:#9aa6b2}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Source Sans 3',-apple-system,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand svg{width:28px;height:28px;flex:none}
+.brand b{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:22px;letter-spacing:.01em;line-height:1}
+.brand small{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin-top:3px}
+nav{display:flex;gap:28px;font-size:14px}
+nav a{color:var(--soft);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{background:linear-gradient(180deg,var(--wash),#fff);padding:96px 0 88px}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(38px,6vw,64px);line-height:1.08;max-width:760px;letter-spacing:-.005em}
+.hero p{margin-top:22px;max-width:560px;color:var(--soft);font-size:18px;font-weight:300}
+section{padding:80px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:14px}
+h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(30px,4vw,40px);line-height:1.15;margin-bottom:12px}
+.lede{color:var(--soft);max-width:620px;margin-bottom:40px}
+.products{list-style:none;border-top:1px solid var(--line)}
+.products li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:22px 4px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.products .name{font-family:'Cormorant Garamond',serif;font-size:28px;line-height:1.1;color:var(--gray)}
+.products .what{font-size:14px;color:var(--gray);flex:1;min-width:200px;padding-left:24px}
+.products .status{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray)}
+.products li.live .name a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--blue)}
+.products li.live .name a:hover{color:var(--blue)}
+.products li.live .what{color:var(--soft)}
+.products li.live .status{color:var(--blue);font-weight:600}
+.products li.gone .name{text-decoration:line-through;text-decoration-thickness:1px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.about p{color:var(--soft);margin-bottom:14px}
+.stat{border-left:2px solid var(--blue);padding-left:18px;margin-bottom:26px}
+.stat b{display:block;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:38px;line-height:1;color:var(--ink)}
+.stat span{font-size:14px;color:var(--soft)}
+footer{background:var(--ink);color:#b9c4d0;padding:48px 0 40px;font-size:13px}
+footer .row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer b{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px;color:#fff}
+footer .fine{margin-top:28px;font-size:12px;color:#8193a6;max-width:760px}
+@media(max-width:760px){nav{display:none}.about{grid-template-columns:1fr;gap:24px}.products .what{padding-left:0;min-width:100%;order:3}.hero{padding:64px 0}section{padding:56px 0}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="option_4_springwood_corporate.html" aria-label="Springwood Pharmaceuticals home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V12" stroke="#2f5d8a" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M16 18c-5 0-8-3-8-8 5 0 8 3 8 8zM16 14c5 0 8-3 8-8-5 0-8 3-8 8z" fill="#2f5d8a"/></svg>
+      <span><b>Springwood</b><small>Pharmaceuticals</small></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#products">Products</a>
+      <a href="#about">Our Company</a>
+      <a href="#about">Patients &amp; Families</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Springwood, Ohio · Since 1961</div>
+    <h1>Restful nights.<br>Healthy families.</h1>
+    <p>For over sixty years, Springwood has developed medicines for the hours when families are most vulnerable, so that every child can sleep soundly, and so can you.</p>
+  </div>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <div class="eyebrow">Our Products</div>
+    <h2>Medicines for the night</h2>
+    <p class="lede">Springwood's portfolio focuses on pediatric sleep and nighttime episode management. Availability varies. Some products are dispensed only through authorized compounding pharmacies.</p>
+    <ul class="products">
+      <li class="live">
+        <span class="name"><a href="leverazopam.html">Leverazopam</a></span>
+        <span class="what">Once-nightly, for families managing nighttime episodes</span>
+        <span class="status">Now available</span>
+      </li>
+      <li>
+        <span class="name">Somnivex</span>
+        <span class="what">Pediatric sleep-onset support</span>
+        <span class="status">Limited</span>
+      </li>
+      <li>
+        <span class="name">Dozmeral</span>
+        <span class="what">Extended overnight maintenance</span>
+        <span class="status">Limited</span>
+      </li>
+      <li>
+        <span class="name">Neurosera</span>
+        <span class="what">Adjunct for nocturnal disturbance</span>
+        <span class="status">Investigational</span>
+      </li>
+      <li>
+        <span class="name">Quellafin</span>
+        <span class="what">Low-dose evening calmative</span>
+        <span class="status">Investigational</span>
+      </li>
+      <li>
+        <span class="name">Dyscordium</span>
+        <span class="what">Sleep-architecture regulation</span>
+        <span class="status">Under review</span>
+      </li>
+      <li class="gone">
+        <span class="name">Hypnocil</span>
+        <span class="what">Dream suppression</span>
+        <span class="status">Discontinued</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="eyebrow">Our Company</div>
+      <h2>Quiet nights are our life's work.</h2>
+      <p>Springwood Pharmaceuticals was founded in Springwood, Ohio, by families who knew what a hard night looks like. Today we partner with prescribing physicians and compounding pharmacies to bring continuity of care to children who need it most.</p>
+      <p>We believe the night should be uneventful.</p>
+    </div>
+    <div>
+      <div class="stat"><b>12+ years</b><span>of continuous care for our longest-treated patients</span></div>
+      <div class="stat"><b>One</b><span>nightly dose. No interruptions.</span></div>
+      <div class="stat"><b>0</b><span>reported recurrences among adherent patients</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <b>Springwood Pharmaceuticals</b>
+      <span>Springwood, OH · Rx products are available by prescription only</span>
+    </div>
+    <p class="fine">The information on this site is intended for U.S. residents and is not a substitute for the advice of your prescribing physician. Do not discontinue any Springwood medication without consulting your physician. © Springwood Pharmaceuticals. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
